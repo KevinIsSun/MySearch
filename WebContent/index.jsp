@@ -1,11 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.Date, java.text.*" %>
-
+<%@ page import="engine.*" import="java.util.*" %>
 <%
-	Date date = new Date();
-	out.println("现在时间："+date);
-%>
+	request.setCharacterEncoding("UTF-8");
+	engine.MyEngine myEngine = null;
+	ArrayList<engine.ResultModel> list=null;
+	boolean isResult = false;
+	String keyword = request.getParameter("keyWord");
+	if(keyword!=null)
+	{
+		keyword = keyword.trim();
+
+		if(keyword.equals(""))
+			isResult = false;
+		else
+		{
+			isResult = true;
+			ServletContext app = (ServletContext) pageContext.getServletContext();
+			String strPath = app.getRealPath("/");
+			
+			myEngine = new engine.MyEngine(strPath+"index.txt");
+			list = myEngine.getResultSet(keyword);
+			
+			if(list==null)isResult = false;
+		}
+	}
+	else
+	{
+		keyword="";
+	}
+ %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,6 +46,58 @@
 	<link href="Images/favicon.ico" rel="shortcut icon" /> <!-- 设置标题 -->
 </head>
 <body>
-
+		<div class="header" id="header">
+		<a href="index.jsp"><img src="Images/Search.jpg" alt="找找看" width="900" height="120" align="middle" /></a>
+		<br /><br /><hr align="center" height="100px"/>
+		<form id="fmSearch" method="post" action="index.jsp">
+			<input type="text" name="keyWord" class="inputText" value="<%=keyword %>"/>&nbsp;
+			<input type="submit" value="搜索" class="inputsubmit"/>
+		</form>
+	</div>
+	<div class="headerBaseInfo">
+		<%
+		 if(isResult)
+		 {%>
+			<a href="#">三金搜索</a> 找到相关内容<%=list.size() %>篇，用时<%=myEngine.getTime() %>毫秒
+		 <%
+		 }
+		 %>
+  </div>
+	<div class="resultBoby">
+		<%
+			 if(isResult)
+			 {
+				for(Object o:list)
+				{
+					engine.ResultModel mod = (engine.ResultModel)o;
+			%>
+					<div class="bobyTitle">
+						<a href="<%=mod.getUrl() %>" target="_blank">
+							<%= myEngine.HighLightKey(mod.getTitle()) %>
+                        </a>
+                	</div>
+					<div class="bobyContent">
+						<%= myEngine.HighLightKey(mod.getPartContent()) %>
+					</div>
+					<div class="bobyUrl">
+						<span style="color: Gray;"><%=mod.getUrl() %></span>&nbsp;&nbsp;
+					</div>
+			 <%
+				}
+			 }else
+			 {
+			 %>
+				<div class="bobyTitle">
+					<div class="bobyContent">
+						 没有查到任何东西，有可能是您的关键词有误，也有可能是我们的搜索引擎还不完善，我们会继续努力地。
+					</div>
+			   </div>
+			 <%} %>
+	</div>
+	<div id="copyright">
+		版权所有 JiangXin Copyright &copy 2014 All Rights Reserved
+		<br />
+		<a href="mailto:jiangxinnju@163.com">联系我们</a>
+  </div>
 </body>
 </html>
