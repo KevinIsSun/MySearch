@@ -240,7 +240,7 @@ public class MyEngine {
 	}
 
 	public static void main(String[] argv) {
-		MyEngine index = new MyEngine("WebRoot/index.txt");
+		MyEngine index = new MyEngine("WebContent/index.txt");
 		ArrayList<ResultModel> testList = index.getResultSet("ÖÐ¹ú&ÃÀ¹ú");
 		for(int i=0;i<testList.size();i++) {
 			testList.get(i).printInfo();

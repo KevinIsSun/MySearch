@@ -1,0 +1,202 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="张军扩:引领新常态需要用好“两只手”" />
+<meta name="Keywords" content="南京大学,理论园地,引领新常态需要用好“两只手”" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/LLYD.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				431]
+				</span></div>
+				<div class="article_title">张军扩:引领新常态需要用好“两只手”</div>
+				<div class="article_info">发布时间：[2015-02-27]  作者：[张军扩]				 来源：[人民日报] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<p>引领新常态有不同方面的目标，其中最重要的目标是形成一种新的发展方式，使经济以这种新方式平稳运行。这种新方式的特征可以概括为经济更加高效、社会更加公平、资源环境更加可持续。形成这样的发展方式，需要用好“两只手”，让政府和市场正确地发挥各自作用。</p>
+
+<p>历史经验表明，在现代化的各个阶段都要发挥好政府和市场的作用，但在不同时期政府和市场作用的范围和强度并不相同。在现代化早期，政府在经济发展方面的作用范围更大一些、力度更强一些。像德国、日本这样的发达国家，在其现代化建设或者现代产业发展起步阶段，政府都通过制定发展战略、集中优质资源、扶持主导产业等方式推动经济发展。我国现代化起步较晚，属于追赶型经济体，政府在经济发展中发挥更大作用有其合理性。改革开放以来的经验也证明了这一点。与其他发展中和转型经济体相比，我国在相同时间内取得的发展成就非常突出，原因就在于我们既不断扩大市场作用，也有效发挥政府作用。</p>
+
+<p>经过30多年的快速发展，我国已跨入上中等收入国家行列。在新的发展阶段，政府和市场作用的空间和强度都会发生变化。这不仅是因为政府干预已经产生一定负效应，而且是因为在更高发展阶段上，发展环境、市场需求的不确定性更大，资源优化配置的具体路径和效率改进的具体方式更难把握，政府作出正确抉择要比过去困难得多，政府作用的领域与过去相比也有很大差别。在这种背景下，需要更多主体参与决策、推动发展，也就是更多地发挥市场作用。</p>
+
+<p>具体到新的发展方式形成上，政府和市场应找准各自的位置。在提高经济效率方面，市场应发挥配置资源的决定性作用，政府应发挥规划引导、宏观调控、维护统一市场、规范竞争秩序等作用。在促进社会公平方面，政府应发挥更大作用，不仅在公共服务供给、社会保障体系建设、收入分配调节等方面发挥主导作用，而且为市场各主体、社会各阶层创造公平发展环境。在资源环境可持续发展方面，政府应承担起标准制定和实施、环境监管执法等职责，并通过健全体制机制激励和约束市场主体，使其在绿色发展方面发挥积极作用。</p>
+
+<p>在中央提出经济发展进入新常态后，各地对引领经济新常态表现出极大热情。但需要注意的是，不能把这种热情变成地方政府对经济进行新一轮的不合理干预。如果是那样，就不见得能保持住我们想要的新常态。要正确引领新常态，必须有正确的作为。</p>
+
+<p>引领新常态，既涉及生产方式转变，也涉及生活方式转变，需要社会各方面积极参与。政府要制定好规划和政策，居民要转变消费方式，企业要根据发展环境变化和国家政策调整转变经营策略和生产方式。应加大对新常态的宣传引导和研究阐释力度，进一步明确新常态提出的时代背景，进一步弄清新常态的内涵和外延，把中央精神变成全民共识，让企业和消费者了解新常态，使市场主体能够积极主动地参与新常态发展。</p>
+
+<p>人力资本提升和科技创新是经济发展方式转变的根本动力。引领新常态，需要完善基础教育、公共卫生和医疗服务、社会保障等公共服务供给机制，加大对这些领域的投入，加快提升人力资本。应通过完善科研体制，建立良好的创新生态系统，推进基础研究和共性技术研发，加强知识产权保护，加快提升自主创新能力。</p>
+
+<p>资源空间配置结构直接影响经济运行效率和区域发展公平，优化资源空间配置是引领新常态的重要途径。应加快国内统一市场建设，打破阻碍要素流动的行政性壁垒，完善交通、通讯基础设施网络，促进要素更加自由和便利地流动。结合落实“一带一路”、京津冀协同发展、长江经济带三大战略，完善区域政策体系，加快在中西部地区培养若干具有战略意义的增长极，促进形成有利于提高资源要素配置和利用效率的生产力新布局。</p>
+
+<p>引领新常态，形成新的经济发展方式，必须深化改革，消除体制弊端。应按照党的十八届三中全会部署，加快转变政府职能，进一步减少政府对资源的直接配置，完善价格形成机制，建立松紧适度的监管体制，引导资源要素优化配置；完善公共服务体制和收入分配制度，促进社会公平；完善生态文明建设体制，严格执行环境保护法，促进可持续发展。</p>
+
+<p>（作者为国务院发展研究中心副主任） </p>
+				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17360 总浏览量 45181636<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

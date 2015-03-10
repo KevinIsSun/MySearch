@@ -1,0 +1,198 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="“指尖上的量子光源” ——铌酸锂光子芯片研究新进展" />
+<meta name="Keywords" content="南京大学,科技动态,铌酸锂光子芯片研究新进展" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/KJDT.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				3300]
+				</span></div>
+				<div class="article_title">“指尖上的量子光源” ——铌酸锂光子芯片研究新进展</div>
+				<div class="article_info">发布时间：[2014-10-16]  作者：[科学技术处]				 来源：[新闻中心] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<p>量子信息技术是21世纪最具魅力的领域之一，它利用量子世界的叠加原理和纠缠特性使得信息处理在容量、速度和精度等方面展现出极大优势，将成为后摩尔时代的支撑技术。而这一技术的实用化还存在很大挑战，其中如何将量子器件芯片化，即在降低成本的同时提升芯片性能成为该领域的关键课题。</p>
+
+<p>最近，我校物理学院博士研究生金华等在徐平教师、祝世宁院士的指导下实现了基于铌酸锂的首个量子光学芯片，将纠缠光子源、电光调制器、光子干涉仪等功能单元成功集成在同一块基于光学超晶格的铌酸锂光子芯片上，实现了纠缠光子产生和调控的一体化设计，完成了纠缠光子对聚束态和分离态的快速切换。图1是芯片的内部结构图和外观照片。整个芯片分为三个区域，区域I是对经典抽运激光的处理，主要是对抽运光的分束和相位调制，区域II是畴反转区，也称光学超晶格区，将两路抽运光转化为简并的纠缠光子对，得到一个路径聚束态。区域III是对纠缠光子的处理，利用波导耦合器实现Hong-Ou-Mandel（HOM）干涉以及对抽运光的滤波。如果II区域产生的路径聚束态中两光路相位相同，那么该聚束态经由HOM干涉后得到分离态。对于具有相位差的一般路径聚束态，干涉后得到分离态和聚束态的叠加。该铌酸锂芯片可在室温稳定工作，工作电压仅为0-3.55V，调控速率可达40GHz，光学超晶格区光子对产率为1.1×107Hz nm-1 mW-1，是一个明亮的、可调控的芯片化量子光源，其基本指标与硅基光子芯片相比具有明显优势。该芯片输入输出与光纤头直接连接并固化，芯片尺寸5cm*5mm，稳定性高, 便于携带, 接近实用化。这一工作是全固态量子芯片研究方面的重要进展, 是对铌酸锂量子逻辑门、量子模拟芯片研究的有力推动。该工作发表在物理评论快报(Phys. Rev. Lett. 113, 1036019(2014))，并作为亮点工作入选Editor’s suggestion和Physics 网站(http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.113.103601). IEEE Spectrum专栏对该工作进行采访(http://spectrum.ieee.org/tech-talk/semiconductors/optoelectronics/quantum-photonics-on-a-single-chip)。</p>
+
+<p>该工作的第一作者为金华博士，通讯作者为徐平，合作单位有北京航天时代光电科技有限公司和东南大学，该工作得到科技部重大科学研究计划和基金委重点项目的支持。（物理学院 徐平、科学技术处）</p>
+
+<p align="center"><img src="/uploadfiles/images/2014/2014_10/d9b821c983d5d7239e394b0318a75781.jpg" width="600"></p>
+
+<p align="center"><img src="/uploadfiles/images/2014/2014_10/1907112c4cb2177a48a67dc637436806.jpg" width="405"></p>
+
+<p align="center"></p>
+
+<p align="center"></p>
+
+<p></p>
+				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17384 总浏览量 45181660<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

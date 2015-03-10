@@ -1,0 +1,226 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="李淳朴：浩瀚乾坤 华章涌现" />
+<meta name="Keywords" content="南京大学,校友菁华,李淳朴" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/YI.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				4147]
+				</span></div>
+				<div class="article_title">李淳朴：浩瀚乾坤 华章涌现</div>
+				<div class="article_info">发布时间：[2014-02-17] 				 来源：[新闻中心] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<p align="center"><img src="/uploadfiles/images/2014/2014_02/c744bbbc055c1f1fd59dfcab546886e6.jpg" width="225"></p>
+
+<p align="center">李淳朴</p>
+
+<p>李淳朴校友1967年出生于陕西户县韩村，1988年毕业于西安电子科技大学，1999年获南京大学国际商学院MBA学位。先后服务于南京七二○厂、美国协和电讯集团、美国GE集团、武汉新鸿基地产公司。1999年与凌秀青先生一起创办浩华地产集团。现任浩华地产集团董事长。</p>
+
+<p>几经浮沉浪 投身房地产当谈起李淳朴校友的成长及创业经历，你会发现其中有很多中国特色。进国企，下海，深造，再创业，创业后就“一发不可收拾”。这条轨迹烙上了我国计划经济向市场经济转变的时代印记。每当品味他每次富有开拓精神的抉择，都让人赞叹不已。</p>
+
+<p>时值1992年，李淳朴校友已在七二○厂工作五年，而国企的日子越来越难过。正值邓公南巡讲话，热血沸腾的他萌发了辞职下海的念头。很快在1993年，他受聘于美国协和集团珠海顺霸电子公司。两年后，他深感自己知识储备不足，导致工作、事业发展遇到瓶颈，于是决定从协和辞职攻读南大商学院MBA学位，1996年1月参考后顺利如愿。因为当时MBA的课程都分布在晚上和周日，所以他受聘工作于GE（美国通用电气公司）照明部驻南京办事处，其间GE的文化给他留下了深深的烙印。1997年10月，李淳朴看中中国房地产行业发展的光明前景，毅然从GE辞职进入武汉新鸿基地产开发公司。两年之后，1999年10月，和好友凌秀青先生一起在羊城广州创建了广州浩华物业咨询有限公司（浩华地产集团前身），12年来，浩华地产集团在李淳朴的带领下稳步发展，从最初仅做房地产策划和销售代理业务到兼具房地产开发和房地产中介两项业务，成为年销售额近百亿的全国知名的房地产综合服务商。为此，浩华荣获包括“2010年CIHAF中国房地产最佳综合服务商”等多项荣誉。</p>
+
+<p>回顾下海近20年来的经历，李淳朴感慨：“每一次碰到危难困苦的时候，都是我人生转折的关头。问题就是机会！古人云：穷则思变，变则通，通则久。说的确实有道理！”正是在时代巨变中他能利用好每次机遇，他的每一次富有卓见和勇气的抉择以及百折不挠的开拓精神才使得他成为了时代的弄潮儿。</p>
+
+<p>以诚信为本 以责任为基任何一个成功的企业都必然要注重企业文化的建设，否则企业难以长久。在李淳朴心中，GE一直是建设企业文化学习的榜样。在创立浩华之初，淳朴就非常注重企业文化建设，有心人会发现浩华文化中有许多GE文化的影子。GE屹立世界百年不倒正是因为“诚信”二字，因此，淳朴在建设浩华文化中最为注重的就是“诚信”。浩华文化“诚信、协作、创新、卓越”中排在首位的就是“诚信”二字，这点和母校南大的校训何其契合，“诚朴雄伟，励学敦行”最为核心的精髓就是一个“诚”字。李淳朴在企业内部用于宣传的文章《自我领导》《自我管理》《你上课了吗》中都一遍遍地叮嘱“诚信”的重要性。淳朴说：“诚信是市场经济的基石，是人与人交往中的基本准则，诚信不能确保你成功，但是‘不诚信’一定导致你不成功，因为天道酬勤，商道酬诚。”浩华文化以诚信为本，在此基础上，浩华文化发展非常多元和全面，更为难能可贵的是，李淳朴作为董事长本身事务极其繁忙，在企业文化建设上却常亲力亲为，翻开《浩华管理集锦》，你会发现众多的文章系他亲自所写，这些文章字里行间闪烁着激情和智慧。浩华对企业文化的专注，使得其先后培养不下100位的房地产开发、代理行业的企业家，职业经理人更是不胜枚举，因此，浩华被誉为中国房地产行业的黄埔军校之一！</p>
+
+<p>同时，在谈到作为房地产开发商应尽的社会责任时，李淳朴校友提出浩华要“用心盖房子，做有责任的开放商”。“房子是中国老百姓最大的购买商品，因而作为建筑的开发商，我们始终要把质量放在首位，我们宁愿损失利润也要确保质量”“我们一直有一个理念，就是让更多的人，花更少的钱，住更好的房子”，李淳朴和他的浩华将企业的社会责任毫不犹豫地扛在肩上，他们勇往直前，目光坚毅。</p>
+
+<p>翻开合作伙伴厚厚的名录，浩华可以自豪，因为，以诚信为本让浩华拥有众多忠诚的合作伙伴；回顾以往项目的彪炳业绩，浩华可以骄傲，因为，以责任为基使浩华拥有众多忠实的顾客。</p>
+
+<p>饰多重角色 演七彩人生正如常言：人生就是一场戏，此话绝然无错，但并不是每个人都能精彩。然李淳朴校友以其强大的人格魅力饰演多重角色，演绎着属于他自己的七彩人生。在客户眼里，他值得信赖，在同事眼里，他是一个好战友；在员工眼里，他是一个好领导；在家人面前，他是一个好丈夫，好父亲。在这些不同角色中，他总能拿捏得当，角色转换自然非常，让人由衷敬佩。</p>
+
+<p>对待地产商客户，李淳朴强调“执行是一切成败的关键”，通常进驻一个新项目一切准备常在一天完成。对待购房客户，他则践行“以客户为上帝”的铁律，2000年李淳朴在青岛嘉定山花园检查工作。一客户晚于预约时间到售楼部，见预约房已卖与他人，立即对置业顾问出言不逊，一定要其原看中之房。一见此景，他立即满脸笑容给对方端上一杯水并自我介绍，并向客户赔礼道歉。可客户毫不买账，端起水将他从头到脚浇了遍。可他依然笑脸，再三致歉，请客户落座，同时批评员工在此情形下应给客户电话再次确认。他的一番婉言相劝最终使客户平静下来，并成功请该客户换了另一套房。淳朴用他的处惊不变、宽广的胸怀为售楼部全体员工上了一堂生动深刻的“客户是上帝”之课！他非常欣赏《道德经》上的一句话：“蒙一家辱，为一家主；蒙一国辱，为一国主”。</p>
+
+<p>作为李淳朴的同事和同学--公司副总裁刘军说：“与淳朴相处十三年，他的无私、自信、眼光、智慧、大度、简朴、勤奋、谈吐、果断、宽容、严谨、民主、速度、爱心、细心等时时感染着我，这些优秀的品德、精神和为人处世风格共同构成他独特的个人魅力，从而形成一股强大的榜样力量，使我和同事们耳濡目染，感受颇深，影响较大，收益匪浅。”</p>
+
+<p>对待自己的员工，李淳朴坚持仁爱的思想。员工李超博客中提到一个故事：有位同事请了半个月事假后辞职了，当时的项目经理便克扣了这位同事的工资。“我觉得李总那个人不错”这位同事说，并直接找到了公司老总李淳朴。李淳朴很客气地接待了这位同事，并且给了他所有的工资。“后来，我们知道工资是李淳朴自己垫付的，而那时公司和李淳朴的资金都还很拮据。这件事，我只是听说，却一直不曾忘记并感动着。”</p>
+
+<p>作为丈夫和父亲，他十分爱妻子和儿子，并尽可能抽时间陪爱人和孩子，同时也非常懂得和妻儿沟通，也希望他们能够参与并感受自己的事业。2006年秦岭山水开盘，他亲自带领全体员工走上寒风彻骨的西安街头派单，还动员了夫人和儿子参加，一夜之间，全西安对秦岭山水尽人皆知。</p>
+
+<p>爱心报母校 真情献社会有了成就后李淳朴校友一直不忘回报社会，就像他接受《中国地产总裁》的采访时所说“企业家都应该是慈善家”。在成立十几年来，浩华已经向社会累计捐赠了六百多万元。</p>
+
+<p>2004年初，在知道家乡母校韩村小学破败的校舍因为洪涝灾害已彻底无法使用时，李淳朴专程从青岛赶回村里与村委会达成捐款建校协议，决定捐资230万元将韩村小学建设成设备一流的花园式学校，230万元在当时户县是最大的一笔捐款，同时设立每年2万元奖励基金，表彰优秀学生和教师。鉴于物价上涨，从2010年开始，又将金额提高到3万元。而李淳朴捐款助校的事迹在当地蒋村、祖庵一带被纷纷传扬，受到人们称赞。</p>
+
+<p>2008年我校仙林校区建成之际，淳朴校友第一时间响应校友总会关于认捐仙林校区绿化树木的号召，一次性认捐了价值14万元的银杏树。2009年起，淳朴每年向校友基金捐赠4万元，用于资助贫困学生。今年，淳朴又捐资115万元在母校助建南京大学仙林气象观测基地和观景亭。在为母校“淳朴楼”“淳朴亭”揭幕仪式上，淳朴校友的致辞非常质朴，他表达了对母校的感激之情，并一再表示，自己对母校的回馈还太少，他会继续情系母校，回馈母校。</p>
+
+<p>这个世界上，有许多人的名字已经被时光的风吹得无影无踪了，而另一些名字，因为爱--爱的付出与施与，却在风中成了不倒的丰碑。李淳朴校友的名字会被很多人永远记住，被韩村小学的孩子和百姓们，被南大的学子们，被浩华帮助过的人们……浩瀚乾坤里 华章涌现中2009年，在浩华成立十周年之际，淳朴校友总结过去十年的经验教训，制定了未来十年的发展愿景和战略目标，提出了浩华的文化战略、业务链战略、核心竞争力战略、竞争战略、员工发展战略等。浩华的发展之路更加清晰，浩华的团队更加凝聚，浩华的市场竞争力更加强大……2010年，淳朴校友将浩华经营理念调整为“敬天爱人，共生共赢”。倡导浩华在发展过程中，要敬畏天道，关爱众人。努力为客户创造价值，为员工提供机会，为股东创造利润，为社会营造和谐，为环境提供保护，致力于追求客户、员工、股东、社会、环境的科学发展，共享成功！将一大批优秀的浩华员工发展为公司的股东、董事，调动了浩华员工创业的激情。这一经营理念赢得了浩华员工和浩华合作伙伴的高度认可。</p>
+
+<p>2011年，浩华推出浩华客户价值理论，强调“服务第一，专业至上”，着力打造浩华地产的产品力、策划力、销售力、执行力、文化力，浩华地产销售额估计过百亿，浩华地产业务再次插上了腾飞的翅膀……。</p>
+
+<p>对于李淳朴校友本人，他的人生华章何尝不是才刚刚开始，陪伴浩华度过的十二年只是个开端，后面将还有更多美妙的旅程。在这个开拓的旅程中，更多的美景会在他的身边涌现铺排…..</p>
+
+<p>我们祝福浩华，我们祝福淳朴校友！</p>
+
+<p>（摘自：南京大学110周年校庆官网）</p>
+				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17480 总浏览量 45181756<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

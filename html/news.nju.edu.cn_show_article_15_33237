@@ -1,0 +1,224 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="吴有训：科学工作，在精细与有恒" />
+<meta name="Keywords" content="南京大学,校友菁华,吴有训" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/YI.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				2688]
+				</span></div>
+				<div class="article_title">吴有训：科学工作，在精细与有恒</div>
+				<div class="article_info">发布时间：[2013-11-06] 				 来源：[新闻中心] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<p align="center"><img src="/uploadfiles/images/2013/2013_11/8605d5d3449b3fd54297b1fd35761d69.jpg" width="120"></p>
+
+<p align="center">吴有训</p>
+
+<p>吴有训</p>
+
+<p>字正之，著名物理学家、教育家。江西高安人，1897年4月26日生。原为中国科协副主席、中国科学院副院长、研究员。1977年11月30日逝世。他于1916年入南京高等师范学校学习，1920年6月毕业于数理化部。1921年赴美国留学，1925年在芝加哥大学获博士学位并留校任助教，次年回国。1927年8月任第四中山大学（后改中央大学）理学院物理系副教授兼系主任。1928年8月起任清华大学（抗战期间为西南联合大学）教授，后任物理系主任、理学院院长等职。1945年10月至1948年底任中央大学校长。1949年起任上海交通大学教授，1950年夏任中国科学院近代物理研究所所长，同年底任中国科学院副院长。1955年6月被聘为中国科学院数学物理学化学部学部委员，并当选为常委主任。</p>
+
+<p>（摘自南京大学官网）</p>
+
+<p>抗战时期，吴有训一直在西南联大任教。1940年西南联大地质系学生胡伦积请老师题写赠言，吴有训欣然命笔写下：“科学工作，在精细与有恒。”40多年后，胡伦积回忆起当时的情景感慨万千：“这两句话在我学习地质科学中，是非常有指导意义的，这是老科学家自己学习实践的总结，也是老科学家对后辈科学工作者的诚恳希望。”</p>
+
+<p>验证康普顿效应</p>
+
+<p>1897年 4月 26日，吴有训出生在江西高安石溪村，7岁时他入家塾学习。1912年这个农家子弟先到县城又到省城度过了他的中学时代，1916年以优异成绩考入南京高等师范学校。1921年考取官费留美资格，赴美入芝加哥大学物理系学习，师从著名物理学家康普顿教授。</p>
+
+<p>康普顿通过研究 X射线经过石墨等物质时发生散射后的光谱组成，提出了X射线量子散射理论，即康普顿效应。但康普顿只进行了石墨等少量实验，验证尚不够充分，对这一理论的普遍性缺乏可靠的说服力。</p>
+
+<p>吴有训接受了验证康普顿效应的课题，夜以继日埋头于实验室里，进行艰苦的实验和严格的计算、分析、整理，终于获得了15种元素散射X线的光谱图。他的实验不管是在精细度还是在可靠性方面都无可挑剔，形成了对康普顿效应广泛适用性的强有力证明，引起科学界的关注。康普顿效应很快为物理学家们所接受，1927年康普顿获得诺贝尔物理学奖。吴有训的工作也得到了物理学界的重视，他的名字随之而闻名中外。</p>
+
+<p>1925年吴有训以“康普顿效应”为题完成了博士论文。取得博士学位后，康普顿盛情邀请他继续留在实验室工作，但他毅然决定回到魂牵梦绕的祖国，为改变祖国的落后面貌贡献力量。</p>
+
+<p>力矫高调及虚空</p>
+
+<p>1928年，吴有训被聘为清华物理系教授，先后任系主任、理学院院长，与清华结下了不解之缘。他注重为学生打好基础，强调 “本系自最浅至最深之课程，均注重于解决问题及实验工作，力矫现实高调及虚空之弊”。虽然已是知名的科学家，但他亲自讲授《普通物理学》等基础课程。在讲课中深入浅出，将最新研究成果引进课堂，激发学生们钻研探索的精神。他还特别注重实验科学，在清华创建了第一个物理实验室，是我国开展近代物理学实验研究的先驱。他不辞辛劳，诲人不倦，亲自指导学生查阅文献，制备实验装置，以严谨的作风培养出王淦昌、赵九章、余瑞璜、翁文波等许多优秀学生。</p>
+
+<p>当时中国科研条件非常落后，但吴有训始终没有放弃对X射线的研究，1930年在国际权威杂志《自然》上发表了他的研究成果，严济慈盛赞他“实开我国物理学研究的先河”。德国哈莱自然科学院 “鉴于其异常卓越的研究成果，特任命北京的教授吴有训博士先生为本会会员”。1945年他出任南京中央大学校长，1948年被选聘为中央研究院院士；1950年起任中国科学院近代物理研究所所长、中国科学院副院长，1955年为中国科学院院士。1977年11月30日，他因动脉瘤破裂导致大出血，不幸与世长辞。</p>
+
+<p>践行“精细与有恒”</p>
+
+<p>吴有训强调搞科学工作来不得半点马虎，一定要精益求精，并且要持之以恒，坚持到底。精细与有恒，是他一直坚持的原则。</p>
+
+<p>为了验证康普顿效应，他进行了上百次实验，整理了上百万字实验笔记。在公布实验结果后，哈佛大学一位教授提出异议，声称实验无法重复。吴有训对自己的实验充满信心，他核对了所有实验数据，确定无误后，亲自前往哈佛大学，当场演示了实验过程。他的动作熟练而果断，实验结果准确无误，博得了在场同行热烈的掌声，精细的实验完全消除了别人的疑虑。</p>
+
+<p>在清华上第一堂物理实验课时，他要求学生用一根两厘米长的短尺度量一段3米的距离，度量一定要准确。这是一个非常简单的实验，但要求必须精细，稍有疏忽，就会出错。他要让学生明白：在科学实验中要重视每一个细节，差之毫厘，失之千里。</p>
+
+<p>吴有训经常鼓励学生，科学研究的道路并非平坦，要取得成就，必须做到持之以恒。钱三强因为听了吴有训关于康普顿效应的演讲，决定一定要来清华跟随吴先生学习。1932年他如愿考入清华大学物理系，吴有训鼓励他：“你的愿望很好，只要脚踏实地努力，并持之以恒，一定能成功！”钱三强没有辜负老师的期望，为我国原子能事业的发展做出了重要贡献。当年，胡伦积带着老师吴有训的赠言，远赴东北，历任长春地质学院及东北大学教授。他牢记教诲，一干就是40多年，发表了多篇很有价值的研究论文，为我国地质事业的发展培养了大批人才。</p>
+
+<p>吴有训一生献身科学事业，取得了重要成就。他的学生王淦昌撰文写道：“吴先生的一生，说明中国人是有聪明才智的，是勤奋而有创造力的，不仅中国人的智力可以与其他任何民族相较量，中国人的品质也可以与任何民族相媲美。”</p>
+
+<p>（摘自中国教育网：吴有训：科学工作，在精细与有恒 2011-04-18　清华大学校史研究室）</p>
+				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17466 总浏览量 45181742<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

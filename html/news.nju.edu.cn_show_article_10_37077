@@ -1,0 +1,217 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="郑言 马雪松:中国协商民主必须坚持走自己的路" />
+<meta name="Keywords" content="南京大学,理论园地,中国协商民主必须坚持走自己的路" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/LLYD.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				1604]
+				</span></div>
+				<div class="article_title">郑言 马雪松:中国协商民主必须坚持走自己的路<BR></div>
+				<div class="article_info">发布时间：[2014-11-19]  作者：[郑言 马雪松]				 来源：[光明日报] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<P>协商民主在中国经历了长期的理论与实践的探索和发展，日益成为中国特色社会主义民主政治的重要组成部分，党的十八大报告明确提出“社会主义协商民主是我国人民民主的重要形式”。要进一步彰显中国协商民主的巨大优越性与强大生命力，必须继续坚持自身的发展逻辑，走自己的路。</P>
+<P mce_keep="true"></P>
+<P align=center>中西协商民主呈现不同的生成逻辑与发展脉络</P>
+<P mce_keep="true"></P>
+<P>从历史经验与现实发展来看，中国与西方的协商民主呈现出截然不同的生成逻辑与发展脉络。西方协商民主理论及其实践主要源于对代议制民主的批判与反思，而中国的协商民主深深植根于革命、建设和改革的实践和制度的本质要求。</P>
+<P mce_keep="true"></P>
+<P>西方协商民主的思想与理念源远流长，最早可追溯至古希腊时期。然而近代西方以自由主义民主为主导，且仅仅将民主当作选举领导人的手段，排斥并限制大众参与。因而，自由主义民主在运行过程中陷入了不可避免的实践困境，公共政策被统治阶级与利益集团所左右，大众的根本利益往往遭受漠视甚至损害，因而总是难以避免激烈的矛盾和冲突，协商民主理论正是为着缓和这些矛盾而在20世纪80年代应运而生。作为自由主义民主的批判者与补救者，协商民主关注先于投票的公共审议过程，主张公民直接参与决策，运用公共理性寻求能够实现公共利益最大化的政策。协商民主理论尤其强调对话协商过程对成员偏好的改造功能，论证消弭分歧达成共识的可能。近年来，西方协商民主开始了由理论向实践的转化。一些科研组织和非政府组织承担了协商民主实践的组织者角色，并开展了形式多样的政治实验。但从总体上看，西方协商民主主要局限于基层治理，并未上升到国家制度，而较低的制度化水平使其难以真正成为代议制民主的对手。</P>
+<P mce_keep="true"></P>
+<P>中国的协商民主在很大程度上是人民民主实践的产物。早在新民主主义革命时期，中国共产党围绕民族救亡和人民解放，与其他党派团体和党外人士密切合作，初步形成了民主协商的思想观念，并落实为“三三制”民主政权建设等实践。在中华人民共和国成立前后，协商民主日趋成熟。1949年9月，中国人民政治协商会议第一次全体会议召开，中国共产党与各民主党派、社会团体、社会贤达讨论通过了《中国人民政治协商会议共同纲领》，确立了中国共产党领导的多党合作和政治协商制度。改革开放以来，我国协商民主得到进一步完善和发展。2007年11月，《中国的政党制度》白皮书进一步确认了协商民主的概念；2012年11月，党的十八大将“协商民主”写进了党的代表大会报告。2013年11月，十八届三中全会对“协商民主”的内涵和外延进行了明确界定。总体上看，中国协商民主更加注重制度建设，已探索出政党协商、中国共产党依托人民政协平台同各界代表人士的协商、政策出台前由政府有关部门组织的民主协商、基层社会的民主协商等诸多实践形式。</P>
+<P mce_keep="true"></P>
+<P>综观中西协商民主的发展历程，不难发现，尽管中国的协商民主还需要不断地发展和完善，但就整体而言，具备西方无可比拟的优越性：其一，协商的广泛性。社会主义制度决定了协商主体能够广泛地囊括社会各阶级阶层的广泛力量，极大地抑制西方协商民主可能存在的过分依靠社会组织与利益集团所必然导致的精英化色彩过重的问题。其二，协商的多层次性。不同于西方协商民主以基层治理为重点，中国协商民主既有以多党合作和政治协商制度为主的协商平台以及政府决策前的协商，又有以民主恳谈会、民主听证会、村民代表会为代表的基层民主协商形式。其三，协商的制度性。西方协商民主尚处于理论探讨与局部实践的阶段，制度化水平较低；而中国的协商民主作为中国社会主义民主政治的基本制度设计和体制安排，已经形成了中国共产党领导的多党合作与政治协商制度、党和政府与广大民众之间形成的协商制度以及基层民主协商制度。</P>
+<P align=center mce_keep="true"></P>
+<P align=center>中西协商民主的差异源于文化背景和制度基础</P>
+<P mce_keep="true"></P>
+<P>中西协商民主具有不同的生成逻辑与发展脉络，究其原因，更多的还在于社会文化背景和政治制度基础方面的重大差异，决定了中西协商民主的本质区别。</P>
+<P mce_keep="true"></P>
+<P>中西协商民主具有不同的社会文化背景。在诸多文化要素中，中西之间最大的差别莫过于个人主义与集体主义的不同价值取向，以此构成了自由主义与社会主义的根本分歧。个人本位的价值观是西方协商民主的基本文化背景，并深刻影响着协商民主的实际运行效果。自由主义是西方社会的主流意识形态，其内核正是个人主义。这一根深蒂固的文化传统使得具有不同利益需求的个体之间、群体之间难以达成共识。实践同样证明，在社会冲突与矛盾日益激化的现代西方社会，通过民主协商来寻求共识、培育公共精神很难实现，协商过程也总是陷入僵局。不同于西方协商民主的黯淡前景，中国协商民主扎根于深厚的历史文化传统，并在马克思主义政党理论和统一战线学说的指引下丰富、充实了现代内容。集体主义是中国的主流价值观，构成其协商民主的基本文化背景。具体来看，“天下为公”观念与集体主义精神强化了个体之间的联系并促进着个体与群体的和谐；民本思想影响下的谏议制度、庶民议政等制度安排包含着一定的协商因素；“和合”思想蕴含着和而不同、尊重差异的深刻内涵，并转化为开放包容、互惠双赢的政治理性……这些珍贵的文化资源使得具有多元利益诉求的个人之间、群体之间适时作出妥协让步，较容易在协商中取得一致意见。</P>
+<P mce_keep="true"></P>
+<P>中西具有明显的协商民主的制度基础差异。首先表现在根本民主制度上。中国的社会主义民主制度较之于西方资本主义民主制度具有突出的优越性。资本主义民主表面上采取竞争性民主的形式，然而，资本主义的性质难掩其资产阶级统治的实质，由此导致了绝大多数社会成员被排斥在协商主体之外，协商民主难以有很大的实践空间。与之相反，我国社会主义根本民主制度为协商民主创造了广阔的发展空间。协商民主之所以成为发展中国民主政治的途径之一，一个重要原因就在于社会主义民主力图实现广大人民群众当家做主，为此需要提供并创造更多、更通畅的运作渠道以及更为有效的运作形式以满足人民群众日益增长的参与需求。同时，也正是在保持根本民主政治制度稳定性的基础上，才得以探索出丰富多样的具体协商民主形式。</P>
+<P mce_keep="true"></P>
+<P>其次，表现在政党制度上。政党是民主政治中不可或缺的参与主体，政党制度特别是党际关系对协商民主的发展与运行效果发挥着至为关键的影响力。西方的政党均有明确的党派利益，竞争性政党制度决定了赢取执政地位是各政党的根本目标，由此导致政党之间采取敌对态度，相互攻击、相互对抗，民主协商可能沦为狭隘的利益争夺。与之相反，中国实行共产党领导下的多党合作和政治协商制度。党的领导对协商民主的健康发展具有积极意义，以政治协商制度为主要载体和平台的协商民主本身就是中国共产党的创造，是中国共产党在领导新民主主义革命中的有益探索与创新；党的领导也是协商民主实现人民利益的有力保障，作为最广大人民群众利益的忠实代表者，中国共产党没有自己的特殊利益，它的领导有助于协调整合多元的利益诉求；党的领导还是协商民主达致共识的有效保证，实践证明，在党的领导下，能够更好地避免协商陷入无止境的争论，使府际协商、社会协商、基层协商都实现理性化与高效化；友好合作的党际关系有利于克服权力角逐、明争暗斗的弊病，较为有效地实现协商民主的目的。</P>
+<P mce_keep="true"></P>
+<P align=center>中国协商民主必须发挥优势，走自己独特的发展道路</P>
+<P mce_keep="true"></P>
+<P>中西协商民主是两种不同的协商民主。总结中国协商民主的成功经验，探寻中国协商民主独特的发展逻辑，进一步发挥中国协商民主在协商的广泛性、多层次性与制度性方面的突出优势，坚定走自己独特发展道路的信心和决心。</P>
+<P mce_keep="true"></P>
+<P>首先，中国协商民主的发展必须始终坚持共产党的领导。在西方的竞争性政党体系下，执政党缺乏推进协商民主的必要动力，无法承担起协商民主领导者的角色。而中国迄今为止协商民主发展的成功之处就在于始终坚持党的领导、人民当家做主与依法治国的有机统一。其中，党的领导对于协商民主的健康发展举足轻重，特别是对于处在社会剧烈变革、矛盾集中爆发时期的发展中国家而言，盲目引入西方式的竞争性体制很有可能导致社会的分裂与动荡，削弱甚至摧毁民主协商的社会共识，从而有损于民主政治本身的意义与价值。</P>
+<P mce_keep="true"></P>
+<P>其次，中国协商民主的发展需要进一步扩大主体范围，增强协商参与者的代表性。中国的协商主体虽然具备西方难以企及的广泛性，但相对于社会主义民主的本质要求而言，仍然存在一定的差距。为此，既要着力培养公民的参与意识和参与能力，鼓励公民以平等、协商的方式参与国家事务和各种社会事务的管理和治理。与此同时也要努力搭建民主协商的多样化平台，保证协商参与者的代表性与广泛性，为越来越多的人参与协商提供机会。</P>
+<P mce_keep="true"></P>
+<P>最后，中国协商民主的发展需要进一步提高制度化、程序化和规范化水平。应通过法律的形式明确规定协商的形式、范围、过程、主体、权利、义务等，使协商民主的运行有法可依。在坚持中国特色社会主义基本政治制度的基础上，不断开发新的政治资源，努力创新并完善协商民主的协同机制、参与机制、保障机制等具体运作机制：在协商议题的提出与确定方面，必须保障党派、界别、团体、行业与公民个人的建议权；在协商过程中，要保障公开透明，给予参与者平等和自由的发言权，设置必要的答辩与质询环节；在协商成果的落实方面，应明确协商结果公示的范围与形式，设立明确的时间表、责任人、监督者，相关组织、机构与公民有权对执行过程进行监督。</P>
+<P mce_keep="true"></P>
+<P>综上所述，中国协商民主是中国特色社会主义政治制度的重要组成部分，具有更加丰富深刻的内涵和更为广阔的发展空间。我们完全有理由、有信心、也有能力走出一条有中国特色的协商民主发展之路，更好地推动我国协商民主的广泛、多层、制度化发展，从而充分展现社会主义民主政治的优越性。</P>
+<P mce_keep="true"></P>
+<P>（作者单位：中国社会科学院政治学研究所、吉林大学行政学院）</P>				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17333 总浏览量 45181609<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

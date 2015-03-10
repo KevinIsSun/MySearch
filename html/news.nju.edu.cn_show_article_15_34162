@@ -1,0 +1,224 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Description" content="陈俊愉：用梅花的精神作梅花的事业" />
+<meta name="Keywords" content="南京大学,校友菁华,陈俊愉" />
+<title>南京大学新闻网</title>
+<link  href="show.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="js/jquery-ui-1.10.1.custom.min.css" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>  
+
+
+</head>
+
+<body>
+
+  <div id="top">
+			<div id="today">2015年3月10日</div>
+			<div id="weather"></div>
+			<div id="toplinks">﻿<a href="/index.html">首页</a> | <a href="#" onclick="window.external.AddFavorite('http://njunews.nju.edu.cn/','南京大学新闻网')">加入收藏</a> | <a href="mailto:xwzx@nju.edu.cn">联系我们</a> | <a href="http://www.nju.edu.cn" target="_blank">南京大学</a> | <a href="http://qzlx.nju.edu.cn" target="_blank">群众路线实践教育活动</a></div>
+			<div id="logo" title="南京大学新闻网首页"><div id="zhuban">南京大学新闻中心主办</div></div>
+			<div id="toplinks_self">                                    <a href='list_1.html'>校内新闻</a> 
+								  | <a href="mtjj.html">媒体聚焦</a>
+								  | <a href='list_4.html'>校园生活</a>								  | <a href='list_12.html'>科技动态</a>								  | <a href='list_7.html'>社科动态</a>								  | <a href="morevideo_nddst.html">视频新闻</a><br>
+								  
+									<a href='list_9.html'>院系动态</a> 
+								  | <a href='list_8.html'>学人视点</a>								  | <a href='list_10.html'>理论园地</a>								  | <a href='list_15.html'>校友菁华</a>								  | <a href="mlnd.html">美丽南大</a>
+								  | <a href="yxnd.html">影像南大</a>
+		<!--
+									<a href="#">南大记忆</a> 
+								  | <a href="#">影像资料</a>
+								  | <a href="#">人才培养</a>
+								  | <a href="#">招生工作</a>
+								  | <a href="#">就业指南</a>
+								  | <a href="#">美丽南大</a>
+								 
+								 --></div><!--toplinks_self end-->
+	
+	  </div><!--top end-->
+	  
+	  <div id="nav">
+			  <div id="banner_c">
+						<div id="slogan"></div>
+						
+						<div id="search"><input type="button" id="searchbtn" /><input type="text" id="searchtxt"  value="搜索···"/></div>
+			  </div><!--banner_c end-->
+	  </div><!--nav end-->
+	  <script>
+	  $.getScript('js/jquery-ui-1.10.1.custom.min.js');
+	  
+	  $(function(){
+	  $('#searchtxt').one("click",function(){
+	  	$(this).val('');
+	  	});
+		
+	  $('#searchbtn').bind("click",function(){
+	      var txt=$('#searchtxt').val();
+		  var re=/[\!\@\#\$\%\^\&\*\(\)\……\——\（\）\~\·\`\<\>\?\\\,\.\;\'\"\《\，\。\；\‘\:\：\“\？\》\、\￥\[\]\{\}\【\】]+/;
+		  
+		  if(re.test(txt)){
+				$("<div>").html("含有非法字符").appendTo("body").dialog();
+				}else
+				{
+				location.href='searchsite.php?r='+txt;
+				
+				
+				}
+		  
+		  
+	    });	
+	//=======================================
+	$('#logo').click(function(){
+		window.location.href="http://news.nju.edu.cn";
+		});	
+	  });
+	  </script>
+  
+  <div id="main">
+  
+  		<div id="left">
+			
+		  <div class="article">
+				<div class="article_nav"><div class="colname">
+				<img src='./uploadfiles/YI.png'></div>
+				
+				<span style="float:right; color:#999;">[本篇访问：
+				4255]
+				</span></div>
+				<div class="article_title">陈俊愉：用梅花的精神作梅花的事业</div>
+				<div class="article_info">发布时间：[2014-02-17] 				 来源：[新闻中心] 				字体大小：[ <a class="px" for="12">小</a> <a class="px" for="14">中</a> <a class="px" for="18">大</a> ]
+					
+				</div>
+				<div class="article_content">
+					<p align="center"><img src="/uploadfiles/images/2014/2014_02/708640d3c9a6e22000bada5860f94a5b.jpg" width="150"></p>
+
+<p align="center">陈俊愉</p>
+
+<p>梅花是中华民族的传统奇葩，自古至今为广大人民所栽培、欣赏、歌咏和赞美。古语有曰：“宝剑锋从磨砺出，梅花香自苦寒来”。而陈俊愉院士几十年孜孜不倦的追求探索，正是在为中华民族的“花魁”梅花谱写一曲又一曲的美妙诗歌。</p>
+
+<p>自幼喜画花卉 立志选择园艺专业陈俊愉于1917年9月在天津出生，4岁时随全家迁居南京。家里有个大花园，占地十多亩，有两位花匠养护，培植花卉品种很多。</p>
+
+<p>孩提时代的陈俊愉经常泡在花园里玩，放学回家就到花园里围着花匠问东问西，学着栽花种草，逐渐养成了对花卉的兴趣。中学毕业后，他进入金陵大学园艺系就读，师从花卉老师汪菊渊教授，系统学习园艺学。抗战时期他随校西迁到成都继续学业。1940年，他以优异的成绩毕业，取得金陵大学学士学位，并获裴多菲金钥匙奖。</p>
+
+<p>大学毕业后陈俊愉继续留校读硕士研究生。1942年，他偶尔看到我国著名园艺专家、时任重庆中央大学教授曾勉先生的一篇英文论文的小册子《中国的国花――梅花》，书中优美的文字和丰富的内容深深吸引着他，于是他壮着胆量写信给曾先生，曾先生见陈俊愉如此好学，即回信并附赠他索要的文献。拜得名师后，陈俊愉对梅花产生浓厚的兴趣，梅花那种朴素无华清淡雅致的品格在他心里悄悄地扎了根。</p>
+
+<p>1943年陈俊愉获得农学硕士学位并留校担任汪菊渊教授的助教。四川是梅花原产分布中心地区之一，陈俊愉开始了四川梅花品种的调查。这一时期他曾去四川大学当过园艺系讲师，兼任过“自力园场公司”董事长，他利用课余或寒暑假自费在巴蜀大地上跋山涉水，曾经乘船遇险差点喂鱼，夜行遇豹相对瞪目而过。为寻梅他跑遍成渝盆地、川西高原，获得了宝贵的一手资料。1947年他出版了第一本研究梅花的小册子《巴山蜀水记梅花》，收集了他在四川发现的野生梅花品种35种。书中包含川梅的分布、习性、培植等内容，被誉为蜀中第一本“梅花秘籍”。</p>
+
+<p>学成归国 建立东湖磨山梅园1947年，陈俊愉考取了公费留学生，赴丹麦哥本哈根皇家兽医及农业大学园艺学部继续研究花卉。经过3年努力，于1950年获得该大学荣誉级科学硕士学位。在得知新中国成立的消息后，陈俊愉认为自己是学农的，又专爱梅花，只有在以农为主的祖国广袤大地又是梅花的原产王国里才有用武之地，他随即携妻女绕道香港回国。回国后即在武汉大学任副教授、教授，后调到华中农学院园艺系任教授兼副系主任。利用农学院的教学和科研优势，他开始在武汉地区调查梅花品种。在丹麦学习时陈俊愉就感到梅花虽为中国名花、却鲜为世界认知，于是他默默下了决心要让中国的梅花走向世界，并进行梅花的综合性科学研究。</p>
+
+<p>当时担任东湖风景区管理处处长的万流一先生也酷爱梅花，两人就共商在东湖磨山建立梅园。万流一先生聘请陈俊愉担任该园规划顾问，另外他又获悉有个叫赵守边的人对园林很有研究，于是就登门拜访，两人谈起梅花便一见如故，陈俊愉随即把赵请到磨山开始种植梅花。赵被聘为梅园主任。后来万流一向陈俊愉询问全国梅花何处最好。陈回答“四川”，于是管理处就派出一支队伍到四川去搜寻梅花，队伍由赵负责。几度入川，历经艰辛，于名山大川间搜寻、购买梅花名品，运回1000多株梅树，其中包括很多珍品，分别种植在磨山，奠定了梅园的基础。这也给陈俊愉后来研究梅花带来很大方便。梅园后来发展到800多亩，植梅树两万多株、规模居全国梅园之首。</p>
+
+<p>锲而不舍 南梅北移几千里1957年陈俊愉调往北京林学院任教，此年就开始在北京进行“南梅北植”的研究和实践，要改变“自古梅花不能过黄河”的旧律。他与北京植物园合作，吸取前人失败的教训，和同事们把从湖南“沅江骨”和南京梅花山的梅树上采集来的种子在北京大面积播种，并对所生长的梅苗进行自然选择，终于使这一批梅苗在1962至1963年之间露地开花结果。他又从几千株梅苗中选育出“北京玉蝶”、“北京小梅”两个能抗-19oC的梅花新品种，迈出了南梅北植的第一步。之后他开始指导研究生锲而不舍地通过种间杂交，培育更抗寒的梅花新品种。通过梅与杏、山桃的杂交，新品种获得杂交优势，进一步提高了抗寒能力。有些品种可抗-30oC至-35oC的低温，从而迈出了第二步。之后研究者们开始进行栽培区域试验，将北京抗寒梅苗分批种植到山西、陕西、甘肃、内蒙古、辽宁、吉林等地，有些品种不仅突破北方越冬成活的瓶颈（冬季低温又干旱），而且还在春季开花。这样，梅花从江南跨越1300公里至北京，再跨越700公里向三北地区。这些成果的完成历时49载，向北伸进3000公里。</p>
+
+<p>“梅花欢喜满天雪”《中国梅花品种图志》问世“梅花欢喜满天雪”咏叹的是梅花的坚忍不拔的品格。“文革”期间，他和学生们在北京经过多年培育出来的20多株抗寒重瓣梅树被砍光、烧光。20多年研究梅花的珍贵数据和记录也被付之一炬。陈俊愉也被送到云南煤矿接受劳动改造。所幸在运动前夕他有先见之明，将“骨红垂枝”“双碧垂枝”等四个优良品种空运到磨山，托人种到人迹罕至的偏僻之处，从而才使大量梅花珍品得以保存下来。</p>
+
+<p>“文革”过后，陈俊愉恢复工作。1979年梅开时节他再访磨山，眼看当年四个良种业已生根开花，喜出望外，不禁连呼：“春天来了”！当晚他和赵守边把盏说梅，谈至夜深人静。从而定下了编著《中国梅花品种图志》（以下简称《图志》），建立中国梅花品种资源圃的大计。</p>
+
+<p>中国梅花品种繁杂。江、浙、皖等地植梅历史悠久，品种各成体系。早至1186年宋人范成大写成我国第一部《梅谱》，但只记录古时吴越梅花。为编这部《图志》，他发动全国的梅园工作者，搜集信息，然后亲往查考，上世纪80年代以来，每年春天梅开之时他就会到磨山先看梅园，后与赵奔波南国，遍访深山。一方面调查国内梅品种资源，另一方面将所见好的品种收集到磨山，筹建梅花品种资源圃。他设想《图志》上列出的品种都能在圃内找到三株以上的样本。十多年中，他和赵带领梅园几位年轻人远赴安徽大山深处、卖花渔村寻回许多珍品，如：安徽的“徽州檀香”、云南的“台阁绿萼”、南京的“南京红萼”、上海的“香雪宫粉”、青岛的“淡寒红”以及日本的“红千鸟”、美国的耐旱品种“美人”，使磨山的品种达309种两万多株，规模扩大至800多亩。当时搜罗回来的大多是枝条，后期繁殖任务全部交给赵守边。在赵的主持下，园林工人利用枝条在园内开展大规模的品种繁殖，并从1982年开始尝试杂交育种。自行培育出40多个优良品种，形成天下珍梅齐聚磨山的壮丽景象。梅花品种资源圃也初具规模后，他又在梅花品种分类上创立了世界上独一无二的“二元分类法”，即不能仅依靠形态标准划分，还要与品种演化程度、形态相结合，形成二元划分标准。《图志》终于在1989年正式出版，原产中国的梅花开始纳入科学分类体系，共分为三系、五类、十八型。详尽收录了中国梅花品种。这是继范成大之后对梅花进行科学、系统研究的又一部梅谱。</p>
+
+<p>1997年他被选任中国工程院院士，1998年起选任该院资深院士。园艺界给他“梅花院士”的雅号。</p>
+
+<p>唯有红梅是国魂，唯有牡丹真国色。近年，陈俊愉还积极倡议将梅花与牡丹一起定为我国的“双国花”。</p>
+
+<p>创建“梅品种国际登录中心”</p>
+
+<p>观赏植物品种的国际登录早从1955年就已启动，国际登录相当于“知识产权”，登录后的品种就得到了全世界的公认。我国现在很多名花出了新品种，还必须到国外去登录。例如牡丹要到美国、兰花要到英国去登录。由于陈俊愉及其领导的中国梅花腊梅分会在梅花研究领域的领先水平，国际园艺协会于1998年授予他们为梅花及果梅的国际植物（品种）登录权威。这是中国第一个植物品种登录权威称号。它意味着规范梅花品种以合法名称的工作，将由中国人来完成。他遂在北京林业大学内成立了“梅花品种国际登陆中心”。这为我国的梅花和果梅走向世界打开了一扇大门。自那以后至今六年多，他亲赴各地，将登录工作与科普宣传、技术培训紧密结合，取得了显著成效。到目前已有26个中外梅花果梅品种正式在梅品种国际登陆机构登录。他也在积极筹建“梅品种国际登录精品园”，该园将荟萃业经国际登录过的梅花品种，成为展示梅品种国际登录成果的大型国际梅园。</p>
+
+<p>积极推动梅花产业化并走向世界我国有丰富的花卉资源，却被西方取去大量野花和栽培花果，并以之作为决定性亲本，培育所得新品种如郁金香等，并因此获得大批经济收入与知识产权，却无半点利益回归到中国。这种长期向世界无偿提供花卉资源的被动局面和不正常的输出史，使陈俊愉下定决心把我国由花卉资源大国变为花卉产业经营大国，大力向世界各国宣传，推广中国的特产花卉（小花、香花），打通新一代中国花卉走向世界市场。</p>
+
+<p>西方人士偏好大花，我国几乎所有开大花的品种都被引种了，开小花的种类却被忽视，还留在我国，如梅花、桂花等等。这等于给我国留下一种特殊的世界专利，因此他认为除了要用综合科学的方法去研究梅花，还要让其形成产业，帮助梅农致富，输出梅花文化，大力宣传、推广，使世界知道梅花的优点和好处所在，让梅花走向世界，使梅花产业形成新的经济增长点。他又认为我国应及早建立和加强新品种的专利制度，给与育种者以知识产权，以促进国内花卉育种事业的发展。</p>
+
+<p>陈俊愉“磨剑”60年，研究梅花取得多项成果，多次获得国家颁发的奖项。发表论文200余篇，出版专著16本，培养研究生30余名，编著科普书籍多种。其中他和程绪珂主编的《中国花经》多次再版，对全国影响甚大。真是应了古人语：“梅花香自苦寒来”，他也正是“用梅花的精神作梅花的事业”。</p>
+
+<p>（摘自：南京大学110周年校庆官网）</p>
+				</div><!--article_content end-->
+			<div id="share">
+			<!--
+			<img src="images/sina.png"> <img src="images/tencent.png"> <img src="images/renren.png"> <img src="images/douban.png"> <img src="images/kaixin.png">
+			-->
+			<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=b2b6aea5-4108-4405-b5e1-b85356f213af&style=1&bp=sinaminiblog,qqmb,sohuminiblog,renren,bsharesync"></script>
+			</div>
+		</div><!--article end-->
+			</div><!--left1 左侧 end-->
+		
+				
+		<div id="right">
+			<div class="fast_list" id="newest">
+				<div class="title"><div class="colname"><img src='./uploadfiles/ZJGX.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37963'> 围绕中心   履职尽责  为创建世界一流大学保驾护... </a></li>
+<li> <a href='show_article_1_37962'> 遵循教育规律   扎根中国大地 努力把南京大学早... </a></li>
+<li> <a href='show_article_1_37960'> 王燕文在南京大学第十次党代会上的致辞 </a></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a></li>
+<li> <a href='show_article_9_37942'> [后勤集团]“三八”节里的普通女工 </a></li>
+<li> <a href='show_article_9_37938'> [软件学院]举办2012级本科生师生交流会 </a></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届大会 </a></li>
+<li> <a href='show_article_2_37946'> 全国政协委员、南京大学地球科学与工程学院院长... </a></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考试 南大教授不... </a></li>
+<li> <a href='show_article_9_37926'> [工程管理学院]“美丽工管”研究生党员志愿服务... </a></li>
+</ul>					</div>	
+			</div>
+			<div class="fast_list" id="mostvisit">
+				 <div class="title"><div class="colname"><img src='./uploadfiles/YZSD.png'></div></div>
+				<div class="content_small">
+						<ul><li> <a href='show_article_1_37918'> 金陵学院召开中层干部扩大会议 </a><span style="color:#999;">[访问：2704]</span></li>
+<li> <a href='show_article_1_37925'> 校领导率队拜会潘中来先生 </a><span style="color:#999;">[访问：2559]</span></li>
+<li> <a href='show_article_1_37934'> 生命科学学院召开行政领导班子换届... </a><span style="color:#999;">[访问：1937]</span></li>
+<li> <a href='show_article_1_37922'> 英国Future Learn首席执行官赛门... </a><span style="color:#999;">[访问：1585]</span></li>
+<li> <a href='show_article_2_37915'> 人大代表、中科院院士陈骏：“创业... </a><span style="color:#999;">[访问：1455]</span></li>
+<li> <a href='show_article_1_37943'> 南京大学形象宣传片脚本征稿启事 </a><span style="color:#999;">[访问：1010]</span></li>
+<li> <a href='show_article_7_37916'> 我校19位教授受聘为江苏省理论宣讲... </a><span style="color:#999;">[访问：861]</span></li>
+<li> <a href='show_article_2_37937'> 院士：应取消研究生入学思想政治考... </a><span style="color:#999;">[访问：636]</span></li>
+<li> <a href='show_article_4_37923'> 我校中美中心学生赴联合国欧洲总部... </a><span style="color:#999;">[访问：584]</span></li>
+<li> <a href='show_article_8_37921'> 徐小跃： 说智（下）  </a><span style="color:#999;">[访问：360]</span></li>
+</ul>					</div>	
+			</div>
+		    </div><!--right1 右侧 end-->			<div style="clear:both;"></div>  
+  </div><!--main end-->
+  
+    <div id="foot">
+  	<div id="foot-info">版权所有 南京大学新闻中心 兼容浏览器：Opera9+ Safari3.1+ Firefox3.0+ Chrome10+ IE6+  今日浏览量  
+	17485 总浏览量 45181761<br>
+	2009-2013 All Rights Reserved &copy;  Nanjing University
+	</div>
+  </div><!--foot 页脚 end--></body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+var weather='<iframe width="450" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="cache/weather.html"></iframe>';
+$('#weather').html(weather);
+  
+      $('.article_content img').addClass('picshadow');
+  
+//======================
+
+    
+	  $('.article_content p').removeAttr('style');
+      $('.article_content p').css('text-indent','2em');
+	  $('.article_content p').each(function(){
+	  	var c=$(this).html();
+	    c=c.replace(/^(\s)+/,'');
+		$(this).html(c);
+	  });
+	  $('.article_content p').has('img').css('text-indent','0');
+	
+	//针对table元素进行修改
+	$('table').removeAttr('style').css('border','1px solid #999').css('border-collapse','collapse').css('width','98%');
+	$('table p').removeAttr('style').css('text-indent','0');
+	
+  $('.px').click(function(event){
+   event.preventDefault();
+   var size=$(this).attr('for')+'px';
+   $('.article_content').css('font-size',size);
+  });
+  
+  //针对table元素进行修改
+  
+  //window.setTimeout('5000',fx.ah());
+  
+})
+</script> 
+

@@ -94,7 +94,7 @@ public class MyCreateIndex {
 
 			System.out.println("ÏÖÔÚÕýÔÚ½«Ë÷ÒýÄÚÈÝÐ´Èë´ÅÅÌ£¬¿ÉÄÜ»áÐèÒª½Ï³¤Ê±¼ä£¬ÇëÄÍÐÄµÈ´ý¡­¡­");
 			start = System.currentTimeMillis();
-			this.writeFileByChars("WebRoot/index.txt", value.toString());
+			this.writeFileByChars("WebContent/index.txt", value.toString());
 			end = System.currentTimeMillis();
 			System.out.println("Ë÷ÒýÄÚÈÝÐ´ÈëÍê±Ï£¬¹²ÓÃÊ±£º" + (end - start) + "ms");
 		}
