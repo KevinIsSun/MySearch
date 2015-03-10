@@ -58,7 +58,7 @@
 		<%
 		 if(isResult)
 		 {%>
-			<a href="#">三金搜索</a> 找到相关内容<%=list.size() %>篇，用时<%=myEngine.getTime() %>毫秒
+			<a href="#">千度搜索</a> 找到相关内容<%=list.size() %>篇，用时<%=myEngine.getTime() %>毫秒
 		 <%
 		 }
 		 %>
@@ -95,7 +95,7 @@
 			 <%} %>
 	</div>
 	<div id="copyright">
-		版权所有 JiangXin Copyright &copy 2014 All Rights Reserved
+		版权所有 Enigma Copyright &copy 2014 All Rights Reserved
 		<br />
 		<a href="mailto:jiangxinnju@163.com">联系我们</a>
   </div>
