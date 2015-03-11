@@ -70,7 +70,7 @@ public class MyCrawler {
 		long start = 0, end = 0;
 		start = System.currentTimeMillis();
 		new MyCrawler(new String[] { "http://news.nju.edu.cn/index.html" },
-				Integer.valueOf(args[0]));
+				Integer.valueOf(100)); // 原来这里的参数是args[0]
 		ExecutorService executors = Executors.newFixedThreadPool(10);
 		for (int i = 0; i < MAXTHREADNUM; i++) {
 			executors.execute(new Crawling());

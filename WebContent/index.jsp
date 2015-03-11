@@ -19,7 +19,7 @@
 			ServletContext app = (ServletContext) pageContext.getServletContext();
 			String strPath = app.getRealPath("/");
 			String tempPath = "/Users/kevin/workspace/tomcat/webapps/MySearch/WebContent/";
-			myEngine = new engine.MyEngine(tempPath+"index.txt");
+			myEngine = new engine.MyEngine(strPath+"index.txt");
 			list = myEngine.getResultSet(keyword);
 			
 			if(list==null)isResult = false;
