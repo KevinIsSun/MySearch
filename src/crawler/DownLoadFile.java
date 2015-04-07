@@ -18,13 +18,14 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.*;
 
 public class DownLoadFile {
-
+	//根据 url 和网页类型生成需要保存的网页的文件名 去除掉 url 中非文件名字符
 	public  String getFileNameByUrl(String url) {
 		url=url.substring(7); //remove http://
-		url= url.replaceAll("[\\?/:*|<>\"]", "_"); //½«ÌØÊâ×Ö·ûÌæ»»£¬ÒÔÉú³ÉºÏ·¨µÄ±¾µØÎÄ¼þÃû
+		url= url.replaceAll("[\\?/:*|<>\"]", "_"); //将特殊字符替换，以生成合法的本地文件名
 		return url;
 	}
 	
+	//保存网页字节数组到本地文件 filePath 为要保存的文件的相对地址
 	private void saveToLocal(InputStream data, String filePath) {
 		try {
 			File result = new File(filePath);
@@ -42,6 +43,7 @@ public class DownLoadFile {
 		}
 	}
 	
+	//下载 url 指向的网页 
 	public String downloadFile(String url) {
 		
 		String filePath = null;
@@ -50,7 +52,7 @@ public class DownLoadFile {
 			@Override
 			public boolean retryRequest(IOException arg0, int executionCount,
 					HttpContext arg2) {
-				if(executionCount > 5) { //×î¶àÖØÊÔ5´Î
+				if(executionCount > 5) { //最多重试5次
 					return false;
 				}
 				return false;
@@ -58,7 +60,7 @@ public class DownLoadFile {
 		};
 		CloseableHttpClient httpClient = HttpClients.custom()
 				.setRetryHandler(myRetryHandler)
-				.build(); //Éú³É HttpClinet
+				.build(); //生成 HttpClinet
 		RequestConfig requestConfig = RequestConfig.custom()
 				.setConnectTimeout(5000)
 				.setConnectionRequestTimeout(5000)
@@ -74,7 +76,7 @@ public class DownLoadFile {
 				filePath = null;
 			}
 			HttpEntity entity = response.getEntity();
-			if(entity != null) { //´¦ÀíÁ÷ÄÚÈÝ
+			if(entity != null) { //处理流内容
 				InputStream entityContent = entity.getContent();
 				filePath = "html/" + getFileNameByUrl(url);
 				saveToLocal(entityContent, filePath);

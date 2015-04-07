@@ -21,11 +21,11 @@ public class MyHtmlToTest {
 				content.append(str);
 			}
 			in.close();
-			String result = this.DealHtml(content); // ×¥È¡ÄÚÈÝ
+			String result = this.DealHtml(content);// 抓取内容
 			ReadAndWrite
 					.writeFileByChars("srcDoc/" + fileName + ".txt", result);
 
-			// ×¥È¡±êÌâ
+			// 抓取标题
 			String titleResult = content.toString();
 			int titleStart = titleResult
 					.indexOf("<div class=\"article_title\">");
@@ -37,7 +37,7 @@ public class MyHtmlToTest {
 			titleResult = this.DealHtml(titleResult);
 			ReadAndWrite.writeFileByChars("titleDoc/" + fileName + ".txt",
 					titleResult);
-			System.out.println("ÒÑ¾­³É¹¦¶Ô" + fileName + "½øÐÐ½âÎö");
+			System.out.println("已经成功对" + fileName + "进行解析");
 		}
 	}
 

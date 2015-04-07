@@ -29,7 +29,7 @@ public class MyEngine {
 	}
 	
 	public MyEngine(String indexFile) {
-		this.indexFile = indexFile;
+		this.indexFile = indexFile;// 索引文件
 		long begin = System.currentTimeMillis();
 		hashWord = new HashMap<String, String>();
 		try {
@@ -50,6 +50,7 @@ public class MyEngine {
 		this.time = end - begin;
 	}
 
+	// 获得结果集合
 	public ArrayList<ResultModel> getResultSet(String key) {
 		int pos = key.indexOf("&");
 		if (pos > 0) {
@@ -68,8 +69,8 @@ public class MyEngine {
 				ResultModel[] modArray = null;
 				String resultBefore = this.hashWord.get(keyBefore);
 				String resultAfter = this.hashWord.get(keyAfter);
-				String[] array = resultBefore.split("#next#"); // µÃµ½´æÔÚ¸Ã¹Ø¼ü×ÖµÄËùÓÐÎÄ±¾ÎÄ¼þÐÅÏ¢
-				modArray = new ResultModel[array.length]; // Ã¿¸öÎÄ±¾ÎÄ¼þÐÅÏ¢¶¼¿ÉÒÔ»ñµÃÒ»¸öResultModel
+				String[] array = resultBefore.split("#next#"); // 得到存在该关键字的所有文本文件信息
+				modArray = new ResultModel[array.length]; // 每个文本文件信息都可以获得一个ResultModel
 				for (int i = 0; i < array.length; i++)
 					modArray[i] = new ResultModel(keyBefore, array[i]);
 
@@ -77,11 +78,11 @@ public class MyEngine {
 					for (int i = 0; i < modArray.length; i++) {
 						modListBefore.add(modArray[i]);
 					}
-					// ½«½á¹û°´ÕÕ´ÊÆµÅÅÐò
+					// 将结果按照词频排序
 					Collections.sort(modList, new sortByWordNum());
 				}
-				array = resultAfter.split("#next#"); // µÃµ½´æÔÚ¸Ã¹Ø¼ü×ÖµÄËùÓÐÎÄ±¾ÎÄ¼þÐÅÏ¢
-				modArray = new ResultModel[array.length]; // Ã¿¸öÎÄ±¾ÎÄ¼þÐÅÏ¢¶¼¿ÉÒÔ»ñµÃÒ»¸öResultModel
+				array = resultAfter.split("#next#"); // 得到存在该关键字的所有文本文件信息
+				modArray = new ResultModel[array.length]; // 每个文本文件信息都可以获得一个ResultModel
 				for (int i = 0; i < array.length; i++)
 					modArray[i] = new ResultModel(keyAfter, array[i]);
 
@@ -89,7 +90,7 @@ public class MyEngine {
 					for (int i = 0; i < modArray.length; i++) {
 						modListAfter.add(modArray[i]);
 					}
-					// ½«½á¹û°´ÕÕ´ÊÆµÅÅÐò
+					// 将结果按照词频排序
 					Collections.sort(modList, new sortByWordNum());
 				}
 				for(int i=0;i<modListAfter.size();i++) {
@@ -121,8 +122,8 @@ public class MyEngine {
 				ResultModel[] modArray = null;
 				String resultBefore = this.hashWord.get(keyBefore);
 				String resultAfter = this.hashWord.get(keyAfter);
-				String[] array = resultBefore.split("#next#"); // µÃµ½´æÔÚ¸Ã¹Ø¼ü×ÖµÄËùÓÐÎÄ±¾ÎÄ¼þÐÅÏ¢
-				modArray = new ResultModel[array.length]; // Ã¿¸öÎÄ±¾ÎÄ¼þÐÅÏ¢¶¼¿ÉÒÔ»ñµÃÒ»¸öResultModel
+				String[] array = resultBefore.split("#next#"); // 得到存在该关键字的所有文本文件信息
+				modArray = new ResultModel[array.length]; // 每个文本文件信息都可以获得一个ResultModel
 				for (int i = 0; i < array.length; i++)
 					modArray[i] = new ResultModel(keyBefore, array[i]);
 
@@ -130,11 +131,11 @@ public class MyEngine {
 					for (int i = 0; i < modArray.length; i++) {
 						modListBefore.add(modArray[i]);
 					}
-					// ½«½á¹û°´ÕÕ´ÊÆµÅÅÐò
+					// 将结果按照词频排序
 					Collections.sort(modList, new sortByWordNum());
 				}
-				array = resultAfter.split("#next#"); // µÃµ½´æÔÚ¸Ã¹Ø¼ü×ÖµÄËùÓÐÎÄ±¾ÎÄ¼þÐÅÏ¢
-				modArray = new ResultModel[array.length]; // Ã¿¸öÎÄ±¾ÎÄ¼þÐÅÏ¢¶¼¿ÉÒÔ»ñµÃÒ»¸öResultModel
+				array = resultAfter.split("#next#"); // 得到存在该关键字的所有文本文件信息
+				modArray = new ResultModel[array.length]; // 每个文本文件信息都可以获得一个ResultModel
 				for (int i = 0; i < array.length; i++)
 					modArray[i] = new ResultModel(keyAfter, array[i]);
 
@@ -142,7 +143,7 @@ public class MyEngine {
 					for (int i = 0; i < modArray.length; i++) {
 						modListAfter.add(modArray[i]);
 					}
-					// ½«½á¹û°´ÕÕ´ÊÆµÅÅÐò
+					// 将结果按照词频排序
 					Collections.sort(modList, new sortByWordNum());
 				}
 				for(int i=0;i<modListAfter.size();i++) {
@@ -165,7 +166,7 @@ public class MyEngine {
 		if (this.hashWord.size() > 0) {
 			long begin = System.currentTimeMillis();
 			ResultModel[] modArray = null;
-			// ¶Ô¹Ø¼ü×Ö·Ö´Ê
+			// 对关键字分词
 			IKSegmenter iksegmentation = new IKSegmenter(new StringReader(key),
 					true);
 			Lexeme lexeme = null;
@@ -178,12 +179,12 @@ public class MyEngine {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			// ·Ö±ð²éÕÒ¸÷¸ö´ÊÔÚË÷ÒýÖÐµÄÆ¥Åä
+			// 分别查找各个词在索引中的匹配
 			for (String strKey : vecKey) {
 				String result = this.hashWord.get(strKey);
 				if (result != null) {
-					String[] array = result.split("#next#"); // µÃµ½´æÔÚ¸Ã¹Ø¼ü×ÖµÄËùÓÐÎÄ±¾ÎÄ¼þÐÅÏ¢
-					modArray = new ResultModel[array.length]; // Ã¿¸öÎÄ±¾ÎÄ¼þÐÅÏ¢¶¼¿ÉÒÔ»ñµÃÒ»¸öResultModel
+					String[] array = result.split("#next#"); // 得到存在该关键字的所有文本文件信息
+					modArray = new ResultModel[array.length]; // 每个文本文件信息都可以获得一个ResultModel
 					for (int i = 0; i < array.length; i++)
 						modArray[i] = new ResultModel(key, array[i]);
 				}
@@ -194,9 +195,9 @@ public class MyEngine {
 						modList.add(modArray[i]);
 					}
 
-					// ºÏ²¢ÏàÍ¬³ö´¦ÄÚÈÝµÄ´ÊÆµ
+					// 合并相同出处内容的词频
 					this.ResultMerger(modList);
-					// ½«½á¹û°´ÕÕ´ÊÆµÅÅÐò
+					// 将结果按照词频排序
 					Collections.sort(modList, new sortByWordNum());
 				}
 			}
@@ -206,12 +207,12 @@ public class MyEngine {
 		return modList;
 	}
 	
-	// »ñµÃ´¦ÀíÊ±¼ä
+	// 获得处理时间
 	public long getTime() {
 		return this.time;
 	}
 
-	// ºÏ²¢ÏàÍ¬³ö´¦ÄÚÈÝµÄ´ÊÆµ
+	// 合并相同出处内容的词频
 	private void ResultMerger(ArrayList<ResultModel> modList) {
 		for (int i = 0; i < modList.size(); i++)
 			for (int j = i + 1; j < modList.size(); j++) {
@@ -225,7 +226,7 @@ public class MyEngine {
 			}
 	}
 		
-	
+	// 对关键词高亮显示
 	public String HighLightKey(String content) {
 		content = content.replaceAll(" ", "");
 		for (String word : this.vecKey) {
@@ -241,7 +242,7 @@ public class MyEngine {
 
 	public static void main(String[] argv) {
 		MyEngine index = new MyEngine("WebContent/index.txt");
-		ArrayList<ResultModel> testList = index.getResultSet("ÖÐ¹ú&ÃÀ¹ú");
+		ArrayList<ResultModel> testList = index.getResultSet("中国&美国");
 		for(int i=0;i<testList.size();i++) {
 			testList.get(i).printInfo();
 			System.out.println(i);

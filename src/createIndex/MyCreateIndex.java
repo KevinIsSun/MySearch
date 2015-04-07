@@ -1,3 +1,6 @@
+/*
+ * 描述：将分好词的文档统计词频并且形成倒排索引文件，存入index.txt文档中
+ * */
 package createIndex;
 
 import java.io.BufferedWriter;
@@ -17,14 +20,14 @@ public class MyCreateIndex {
 		File dirFile = new File("wordDoc");
 		File[] fileList = dirFile.listFiles();
 
-		System.out.println("ÕýÔÚ¶ÔÎÄ±¾ÄÚÈÝ½øÐÐ·ÖÎö£¬¿ÉÄÜ»áÐèÒª½Ï³¤Ê±¼ä£¬ÇëÄÍÐÄµÈ´ý¡­¡­");
+		System.out.println("正在对文本内容进行分析，可能会需要较长时间，请耐心等待……");
 		start = System.currentTimeMillis();
 		for (int i = 0; i < fileList.length; i++) {
 			String fileName = fileList[i].getName();
-			System.out.println("\tÏÖÔÚÕýÔÚ¶ÔÎÄ¼þ" + fileName + "½øÐÐ·ÖÎö");
+			System.out.println("\t现在正在对文件" + fileName + "进行分析");
 			HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
 			String content = ReadAndWrite.readFileByChars(
-					"wordDoc/" + fileName, "gbk");
+					"wordDoc/" + fileName, "UTF-8");
 			String[] wordArray = content.split(" ");
 			for (int j = 0; j < wordArray.length; j++) {
 				if (hashMap.keySet().contains(wordArray[j])) {
@@ -34,17 +37,17 @@ public class MyCreateIndex {
 				} else
 					hashMap.put(wordArray[j], new Integer(1));
 			}
-			// »ñµÃ±êÌâ
+			// 获得标题
 			String title_origin = ReadAndWrite.readFileByChars("titleDoc/"
-					+ fileName, "gbk");
-			// »ñµÃ¸ú´ÊÏà¹ØµÄ²¿·ÖÄÚÈÝ
+					+ fileName, "UTF-8");
+			// 获得跟词相关的部分内容
 			String fullContent_origin = ReadAndWrite.readFileByChars("srcDoc/"
-					+ fileName, "gbk");
+					+ fileName, "UTF-8");
 			for (String str : hashMap.keySet()) {
 				String title = title_origin;
 				String fullContent = fullContent_origin;
 				String partContent = "";
-				int wordStart = fullContent.indexOf(str);// °üº¬´ÊµÄÎ»ÖÃ
+				int wordStart = fullContent.indexOf(str);// 包含词的位置
 				while (wordStart > 0) {
 					String strTmp;
 					int s = 0, e = fullContent.length();
@@ -61,10 +64,10 @@ public class MyCreateIndex {
 					fullContent = fullContent.substring(e);
 					wordStart = fullContent.indexOf(str);
 				}
-				// ÐÎ³Éµ¹ÅÅË÷Òý
+				// 形成倒排索引
 				String tmp = fileName + "#split#" + title + "#split#"
 						+ partContent + "#split#" + hashMap.get(str);
-				if (hashResult.keySet().contains(str)) {// °üº¬¸Ã´Ê
+				if (hashResult.keySet().contains(str)) {// 包含该词
 					String value = (String) hashResult.get(str);
 					value += ("#next#" + tmp);
 					hashResult.put(str, value);
@@ -90,13 +93,13 @@ public class MyCreateIndex {
 
 			}
 			end = System.currentTimeMillis();
-			System.out.println("Ë÷ÒýÄÚÈÝ½¨Á¢Íê±Ï£¬¹²ÓÃÊ±£º" + (end - start) + "ms");
+			System.out.println("索引内容建立完毕，共用时：" + (end - start) + "ms");
 
-			System.out.println("ÏÖÔÚÕýÔÚ½«Ë÷ÒýÄÚÈÝÐ´Èë´ÅÅÌ£¬¿ÉÄÜ»áÐèÒª½Ï³¤Ê±¼ä£¬ÇëÄÍÐÄµÈ´ý¡­¡­");
+			System.out.println("现在正在将索引内容写入磁盘，可能会需要较长时间，请耐心等待……");
 			start = System.currentTimeMillis();
-			this.writeFileByChars("WebContent/index.txt", value.toString());
+			this.writeFileByChars("WebRoot/index.txt", value.toString());
 			end = System.currentTimeMillis();
-			System.out.println("Ë÷ÒýÄÚÈÝÐ´ÈëÍê±Ï£¬¹²ÓÃÊ±£º" + (end - start) + "ms");
+			System.out.println("索引内容写入完毕，共用时：" + (end - start) + "ms");
 		}
 
 	}

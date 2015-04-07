@@ -5,10 +5,10 @@ import java.io.File;
 public class DeleteDirectory {
 
 	/**
-	 * µÝ¹éÉ¾³ýÄ¿Â¼ÏÂµÄËùÓÐÎÄ¼þ¼°×ÓÄ¿Â¼ÏÂËùÓÐÎÄ¼þ
+	 * 递归删除目录下的所有文件及子目录下所有文件
 	 * 
 	 * @param dir
-	 *            :½«ÒªÉ¾³ýµÄÎÄ¼þÄ¿Â¼
+	 *            :将要删除的文件目录
 	 * @return boolean Returns "true" if all deletions were successful. If a
 	 *         deletion fails, the method stops attempting to delete and returns
 	 *         "false".
@@ -16,7 +16,7 @@ public class DeleteDirectory {
 	public static boolean deleteDir(File dir) {
 		if (dir.isDirectory()) {
 			String[] children = dir.list();
-			// µÝ¹éÉ¾³ýÄ¿Â¼ÖÐµÄ×ÓÄ¿Â¼ÏÂ
+			// 递归删除目录中的子目录下
 			for (int i = 0; i < children.length; i++) {
 				boolean success = deleteDir(new File(dir, children[i]));
 				if (!success) {
@@ -24,7 +24,7 @@ public class DeleteDirectory {
 				}
 			}
 		}
-		// Ä¿Â¼´ËÊ±Îª¿Õ£¬¿ÉÒÔÉ¾³ý
+		// 目录此时为空，可以删除
 		return dir.delete();
 	}
 	public static boolean deleteDirs(String[] deleteDirs) {
@@ -32,7 +32,7 @@ public class DeleteDirectory {
 			File dir = new File(deleteDirs[i]);
 			boolean isSuccessful = deleteDir(dir);
 			if(isSuccessful == true) {
-				System.out.println("³É¹¦É¾³ýÄ¿Â¼£º" + dir);
+				System.out.println("成功删除目录：" + dir);
 			}
 		}
 		return false;
@@ -40,7 +40,7 @@ public class DeleteDirectory {
 	}
 
 	/**
-	 * ²âÊÔ
+	 * 测试
 	 */
 	public static void main(String[] args) {
 		String newDir2 = "new_dir2";

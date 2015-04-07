@@ -27,7 +27,7 @@ public class MyCrawler {
 		public void run() {
 
 			// TODO Auto-generated method stub
-			// ¶¨Òå¹ýÂËÆ÷£¬ÌáÈ¡ÒÔhttp://www.nju.edu.cn¿ªÍ·µÄÁ´½Ó
+			// 定义过滤器，提取以http://www.nju.edu.cn开头的链接
 			LinkFilter filter = new LinkFilter() {
 				public boolean accept(String url) {
 					if (url.startsWith("http://news.nju.edu.cn")
@@ -40,23 +40,23 @@ public class MyCrawler {
 				}
 			};
 
-			// Ñ­»·Ìõ¼þ£º´ý×¥È¡µÄÁ´½Ó²»¿ÕÇÒ×¥È¡µÄÍøÒ³²»¶àÓÚ1000
+			// 循环条件：待抓取的链接不空且抓取的网页不多于1000
 			// while (!LinkQueue.unVisitedUrlsEmpty() && downloadFileNum <
 			// MAXNUM) {
 			while (downloadFileNum < MAXNUM) {
 				if (!LinkQueue.unVisitedUrlsEmpty()) {
-					// ¶ÓÍ·URL³ö¶ÓÁÐ
+					// 队头URL出队列
 					String visitUrl = (String) LinkQueue.unVisitedUrlDeQueue();
 					if (visitUrl.contains("show_article")) {
 						System.out.println(Thread.currentThread().getName());
-						DownLoadFile downLoader = new DownLoadFile(); // ÏÂÔØÍøÒ³
+						DownLoadFile downLoader = new DownLoadFile(); // 下载网页
 						downLoader.downloadFile(visitUrl);
 						downloadFileNum++;
 					}
-					LinkQueue.addVisitedUrl(visitUrl); // ¸Ã url ·ÅÈëµ½ÒÑ·ÃÎÊµÄ URL ÖÐ
+					LinkQueue.addVisitedUrl(visitUrl); // 该 url 放入到已访问的 URL
 					Set<String> links = HtmlParserTool.extracLinks(visitUrl,
-							filter); // ÌáÈ¡³öÏÂÔØÍøÒ³ÖÐµÄ URL
-					// ÐÂµÄÎ´·ÃÎÊµÄ URL Èë¶Ó
+							filter); // 提取出下载网页中的 URL
+					// 新的未访问的 URL 入队
 					for (String link : links) {
 						LinkQueue.addUnvisitedUrl(link);
 					}
@@ -81,6 +81,6 @@ public class MyCrawler {
 			;
 
 		end = System.currentTimeMillis();
-		System.out.println("ÅÀ³æ³ÌÐò¹²»¨·ÑÊ±¼ä£º" + (end - start));
+		System.out.println("爬虫程序共花费时间：" + (end - start));
 	}
 }

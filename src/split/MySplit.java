@@ -78,7 +78,7 @@ public class MySplit {
 		} catch (IOException e3) {
 			e3.printStackTrace();
 		}
-		System.out.println("³É¹¦¶Ô" + srcfilename + "½øÐÐ·Ö´Ê");
+		System.out.println("成功对" + srcfilename + "进行分词");
 	}
 	public static void main(String[] argv) {
 		MySplit myIK_Tokenize = new MySplit("srcDoc/", "wordDoc/");
