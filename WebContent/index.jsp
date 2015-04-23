@@ -46,6 +46,7 @@
 	<link href="Images/favicon.ico" rel="shortcut icon" /> <!-- 设置标题 -->
 </head>
 <body>
+<!-- dyc is pig  -->
 		<div class="header" id="header">
 		<a href="index.jsp"><img src="Images/Search.jpg" alt="找找看" width="900" height="120" align="middle" /></a>
 		<br /><br /><hr align="center" height="100px"/>
