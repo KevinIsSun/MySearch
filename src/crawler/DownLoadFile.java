@@ -85,7 +85,7 @@ public class DownLoadFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("³É¹¦ÏÂÔØÎÄ¼þ" + filePath + "µ½±¾µØ"); //not very bad
+		System.out.println("成功下载文件" + filePath + "到本地"); //not very bad
 		return filePath;
 	}
 }

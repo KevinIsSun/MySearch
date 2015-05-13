@@ -77,17 +77,17 @@ public class MyCreateIndex {
 
 		}
 		end = System.currentTimeMillis();
-		System.out.println("ÎÄ¼þÄÚÈÝ·ÖÎöÍê±Ï£¬¹²ÓÃÊ±£º" + (end - start) + "ms");
+		System.out.println("文件内容分析完毕，共用时：" + (end - start) + "ms");
 
 		if (hashResult.size() > 0) {
 			StringBuilder value = new StringBuilder("");
 
-			System.out.println("ÏÖÔÚÕýÔÚ½¨Á¢Ë÷ÒýÄÚÈÝ£¬¿ÉÄÜ»áÐèÒª½Ï³¤Ê±¼ä£¬ÇëÄÍÐÄµÈ´ý¡­¡­");
+			System.out.println("现在正在建立索引内容，可能会需要较长时间，请耐心等待……");
 			start = System.currentTimeMillis();
 			for (String str : hashResult.keySet()) {
 				StringBuilder tmp = new StringBuilder(str).append("  ").append(
 						hashResult.get(str));
-				// String tmp = str + "  " + hashResult.get(str); // Á½¸ö¿Õ¸ñ
+				// String tmp = str + "  " + hashResult.get(str); // 两个空格
 				value.append(tmp).append("#LINE#");
 				// value += (tmp + "#LINE#");
 
@@ -97,7 +97,7 @@ public class MyCreateIndex {
 
 			System.out.println("现在正在将索引内容写入磁盘，可能会需要较长时间，请耐心等待……");
 			start = System.currentTimeMillis();
-			this.writeFileByChars("WebRoot/index.txt", value.toString());
+			this.writeFileByChars("index.txt", value.toString());
 			end = System.currentTimeMillis();
 			System.out.println("索引内容写入完毕，共用时：" + (end - start) + "ms");
 		}
