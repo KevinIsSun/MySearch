@@ -30,10 +30,8 @@ public class MyCrawler {
 			// 定义过滤器，提取以http://www.nju.edu.cn开头的链接
 			LinkFilter filter = new LinkFilter() {
 				public boolean accept(String url) {
-					if (url.startsWith("http://news.nju.edu.cn")
-							&& (url.endsWith(".html") || (url
-									.contains("show_article") && !url
-									.contains("#"))))
+					if (url.startsWith("http://news.sjtu.edu.cn/")
+							&& (url.endsWith(".htm")))
 						return true;
 					else
 						return false;
@@ -47,7 +45,7 @@ public class MyCrawler {
 				if (!LinkQueue.unVisitedUrlsEmpty()) {
 					// 队头URL出队列
 					String visitUrl = (String) LinkQueue.unVisitedUrlDeQueue();
-					if (visitUrl.contains("show_article")) {
+					if (visitUrl.contains("info")) {
 						System.out.println(Thread.currentThread().getName());
 						DownLoadFile downLoader = new DownLoadFile(); // 下载网页
 						downLoader.downloadFile(visitUrl);
@@ -69,7 +67,7 @@ public class MyCrawler {
 	public static void main(String[] args) {
 		long start = 0, end = 0;
 		start = System.currentTimeMillis();
-		new MyCrawler(new String[] { "http://news.nju.edu.cn/index.html" },
+		new MyCrawler(new String[] { "http://news.sjtu.edu.cn/index.htm" },
 				Integer.valueOf(100)); // 原来这里的参数是args[0]
 		ExecutorService executors = Executors.newFixedThreadPool(10);
 		for (int i = 0; i < MAXTHREADNUM; i++) {

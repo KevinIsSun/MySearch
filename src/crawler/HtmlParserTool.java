@@ -50,16 +50,16 @@ public class HtmlParserTool {
 				} else// <frame> 标签
 				{
 					// 提取 frame 里 src 属性的链接如 <frame src="test.html"/>
-					String frame = tag.getText();
-					int start = frame.indexOf("src=\"");
-					frame = frame.substring(start);
-					int end = frame.indexOf("\">");
-					if(end == -1) {
-						end = frame.indexOf("?");
-					}
-					String frameUrl = frame.substring(5, end - 1);
-					if (filter.accept(frameUrl))
-						links.add(frameUrl);
+//					String frame = tag.getText();
+//					int start = frame.indexOf("src=\"");
+//					frame = frame.substring(start);
+//					int end = frame.indexOf("\">");
+//					if(end == -1) {
+//						end = frame.indexOf("?");
+//					}
+//					String frameUrl = frame.substring(5, end - 1);
+//					if (filter.accept(frameUrl))
+//						links.add(frameUrl);
 				}
 			}
 		} catch (ParserException e) {
